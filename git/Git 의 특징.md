@@ -68,7 +68,27 @@ Working directory에서 add를하면 staging area에 임시 저장되고 commit 
 
 - staging area에 있는 파일을 확인 할 수 있다.
 
+## $ git config
 
+-  git config --global user.name "username"
+  - Github에서 설정한 username으로 설정
+
+- git config --global user.email "(my)@email.com"
+  - Github에서 설정한 email로 설정
+
+- 설정 확인
+  - git config-l
+  - git config--global-l
+  - git config user.name
+  - git config--system
+    - /etc/gitconfig
+    - 시스템의 모든 사용자와 모든 저장소에 적용(관리자 권한)
+  - git config--global
+    - ~/.gitconfig
+    - 현재 사용자에게 적용되는 설정
+  - git config--local
+    - .git/config
+    - 특정 저장소에만 적용되는 설정
 
 # git 사용시
 
