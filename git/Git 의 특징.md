@@ -15,7 +15,7 @@
   |  version 2  |
   |  version 3  |
 
-  ![화면 캡처 2022-07-06 170713](Git 의 특징.assets/화면 캡처 2022-07-06 170713.png)
+  ![화면 캡처 2022-07-06 170713](https://github.com/star2871/TIL/blob/master/git/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202022-07-06%20170713.png)
 
 | computer A | computer B |
 | :--------: | :--------: |
