@@ -132,8 +132,106 @@
     print(x, y)
     ```
 
-    
 
   
+
+- 식별자
+
+  - 파이썬 객체(변수, 함수, 모듈, 클래스 등)를 식별하는데 사용하는 이름(name)
+
+  - 규칙
+
+    - 식별자의 이름은 영문 알파벳, 언더스코어(_), 숫자로 구성
+    - 첫 글자에 숫자가 올 수 없음
+    - 길이제한이 없고, 대소문자를 구별
+    - 다음의 키워(keywords)는 예약어(reseved words)로 사용할 수 없음
+
+  - 키워드/ 예약어
+
+    ```python
+    import keyword
+    print(keyword.kwlist)
+    ```
+
+    ['False', 'None', 'True', 'and', 'as', 'assert',  'async', 'await', 'break', 'class', 'continue',  'def', 'del', 'elif', 'else', 'except',  'finally', 'for', 'from', 'global', 'if',  'import', 'in', 'is', 'lambda', 'nonlocal',  'not', 'or', 'pass', 'raise', 'return', 'try',  'while', 'with', 'yield']
+
+  - 내장함수나 모듈 등의 이름으로도 만들면 안됨
+
+    - 기존의 이름에 다른 값을 할당하게 되므로 더 이상 동작하지 않음
+
+      ```python
+      print(5)
+      print = 'hi'
+      print(5)
+      ```
+
+      TypeError Traceback (most recent call last) 
+
+      1 print(5)  
+
+      2 print = 'hi’  
+
+      ----> 3 print(5)  
+
+      TypeError: 'str' object is not callable
+
+  
+
+  ​			내장 함수 print가 아닌 식별자(변수명)가 print인 문자열 hi로 활용됨
+
+  
+
+- 사용자 입력
+
+  - input([prompt])
+
+    - 사용자로부터 값을 즉시 입력 받을 수 있는 내장함수
+
+    - 대괄호 부분에 문자열을 넣으면 입력 시, 해당 문자열을 출력할 수 있음
+
+    - 반환값은 항상 문자열의 형태로 반환
+
+      ``` python
+      name = input('이름을 입력해주세요 : ')
+      print(name)
+      # 이름을 입력해주세요 : 파이썬
+      type(name)
+      # str
+      ```
+
+  
+
+- 주석(Comment)
+
+  - 코드에 대한 설명
+    - 중요한 점이나 다시 확인하여야 하는 부분을 표시
+    - 컴퓨터는 주석을 인식하지 않음 사용자만을 위한 것
+
+  - 가장 중요한 습관 
+
+    - 개발자에게 주석을 작성하는 습관은 매우 중요 
+
+    - 쉬운 이해와 코드의 분석 및 수정이 용이 
+
+      ✓ 주석은 코드 실행에 영향을 미치지 않을 뿐만 아니라 
+
+      ✓ 프로그램의 속도를 느리게 하지 않으며, 용량을 늘리지 않음
+
+  - 한 줄 주석 
+
+    - 주석으로 처리될 내용 앞에 ‘#’ 을 입력 
+
+    - 한 줄을 온전히 사용할 수도 있고, 그 줄 코드 뒷부분에 작성 할 수 있음
+
+      ```python
+      # 주석(comment)입니다.
+      
+      # print('hello')
+      print('world') # 주석
+      ```
+
+
+
+- 파이썬 자료형
 
   
