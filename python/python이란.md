@@ -133,7 +133,7 @@
     ```
 
 
-  
+
 
 - 식별자
 
@@ -232,6 +232,72 @@
 
 
 
-- 파이썬 자료형
+- 파이썬 자료형 분류
 
-  
+  - 불린형(Boolean Type) 
+
+  - 수치형(Numeric Type) 
+
+    - int (정수, integer) 
+    - float (부동소수점, 실수, floating point number) 
+    - complex (복소수, complex number) 
+
+  - 문자열(String Type) 
+
+  -  None 
+
+    - 파이썬 자료형 중 하나 
+
+    - 파이썬에서는 값이 없음을 표현하기 위해 None 타입이 존재함. 
+
+    - 일반적으로 반환 값이 없는 함수에서 사용하기도 함.
+
+      ```python
+      print(type(None))
+      # <class 'NoneType'>
+      a = None
+      print(a)
+      # None
+      ```
+
+
+
+- 불린(Boolean)
+
+  - True / False 값을 가진 타입은 bool 
+
+  - 비교/논리 연산을 수행함에 있어서 활용됨 
+
+  - 다음은 모두 False로 변환 
+
+    - 0, 0.0, (), [], {}, '', None
+
+  - bool() 함수
+
+    - 특정 데이터가 True인지 False인지 검증
+
+      ```python
+      bool(0)
+      # False
+      bool(1)
+      # True
+      bool(-1)
+      # True
+      bool('')
+      # False
+      bool([])
+      # False
+      bool([1, 2, 3])
+      # True
+      ```
+
+  - 논리 연산자
+
+    - 논리식을 판단하여 참(True)와 거짓(False)를 반환함
+
+      | 연산자  |              내용              |
+      | :-----: | :----------------------------: |
+      | A and B |    A와 B 모두 True시, True     |
+      | A or B  |   A와 B 모두 False시, False    |
+      |   Not   | True를 False로, False를 True로 |
+
