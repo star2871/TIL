@@ -300,4 +300,141 @@
       | A and B |    A와 B 모두 True시, True     |
       | A or B  |   A와 B 모두 False시, False    |
       |   Not   | True를 False로, False를 True로 |
+    
+    - and : 모두 참인 경우 참, 그렇지 않으면 거짓
+    
+      | 논리연산자 and  | 내용  |
+      | --------------- | ----- |
+      | True and True   | True  |
+      | True and False  | False |
+      | False and True  | False |
+      | False and False | False |
+    
+    - or : 둘 중 하나만 참이라도 참, 그렇지 않으면 거짓
+    
+      | 논리연산자 or   | 내용  |
+      | --------------- | ----- |
+      | True and True   | True  |
+      | True and False  | True  |
+      | False and True  | True  |
+      | False and False | False |
+    
+    - not : 참 거짓의 반대의 결과
+    
+      | 논리연산자 not | 내용  |
+      | -------------- | ----- |
+      | not True       | False |
+      | not False      | True  |
+    
+    - 연산자 예제
+    
+      ```python
+      num = 100
+      num >= 100 and num % 3 == 1
+      # True
+      ```
 
+
+
+- 수치형(Numeric Type)
+
+  - 정수(int)
+
+    - 모든 정수의 타입은 int
+      - Python 3부터는 long 타입은 없고, 모두 int로 표기 됨 
+      - 여타 프로그래밍 언어, Python 2에서는 OS기준 32/64비트 
+    - 매우 큰 수를 나타낼 때 오버플로우가 발생하지 않음 
+      - 오버플로우(overflow) : 데이터 타입별로 사용할 수 있는 메모리의 크기를 넘어서는 상
+      - Arbitrary precision arithmetic(임의 정밀도 산술)을 통해 고정된 형태의 메모리가 아닌 가용 메모리들을 활 용하여 모든 수 표현에 활용
+    - 모든 정수의 타입은 int 
+    - 오버플로우가 발생하지 않음
+
+  - 실수(float)
+
+    - 정수가 아닌 모든 실수는 float 타입 
+
+    - 부동소수점 
+
+      - 실수를 컴퓨터가 표현하는 방법 - 2진수(비트)로 숫자를 표현 
+      - 이 과정에서 floating point rounding error가 발생하여, 예상치 못한 결과가 발생
+
+    - Floatin point rounding error
+
+      - 부동소수점에서 실수 연산 과정에서 발생 가능 
+
+        - 값 비교하는 과정에서 정수가 아닌 실수인 경우 주의할 것
+
+          ```python
+          # 아래는 참일까? 거짓일까?
+          3.14 - 3.02 == 0.12
+          ```
+
+          ```python
+          3.14 - 3.02
+          #0.12000000000000001
+          ```
+
+      - 부동소수점에서 실수 연산 과정에서 발생 가능 
+
+        - 값 비교하는 과정에서 정수가 아닌 실수인 경우 주의할 것 
+
+        - 매우 작은 수보다 작은지를 확인하거나 math 모듈 활용
+
+          ```python
+          # 1. 임의의 작은 수
+          abs(a - b) <= 1e-10
+          
+          # 2. math 모듈 활용
+          import math
+          math.isclose(a, b)
+          ```
+
+  - 복소수(complex)
+
+    - 실수부와 허수부로 구성된 복소수는 모두 complex 타입 
+
+      - 허수부를 j로 표현
+
+        ```python
+        a = 3+4j
+        type(a)
+        # <classs 'complex'>
+        a. real
+        # 3.0
+        a. imag
+        # 4.0
+        ```
+
+  - 산술 연산자
+
+    - 기본적인 사칙연산 및 수식 계산
+
+      | 연산자 |   내용   |
+      | :----: | :------: |
+      |   +    |   덧셈   |
+      |   -    |   뺄셈   |
+      |   *    |   곱셈   |
+      |   %    |  나머지  |
+      |   /    |  나눗셈  |
+      |   //   |    몫    |
+      |   **   | 거듭제곱 |
+
+  - 복합 연산자
+
+    - 연산과 할당이 함께 이뤄짐
+
+      | 연산자  |    내용    |
+      | :-----: | :--------: |
+      | a += b  | a = a + b  |
+      | a -= b  | a = a - b  |
+      | a *= b  | a = a * b  |
+      | a /= b  | a = a / b  |
+      | a //= b | a = a // b |
+      | a %= b  | a = a % b  |
+      | a **= b | a = a ** b |
+
+  - 비교 연산자
+
+    - 값을 비교하며, True / False  값을 리턴함
+
+      
