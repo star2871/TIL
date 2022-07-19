@@ -1,8 +1,8 @@
-# import sys
-# sys.stdin = open("2070.txt", "r")
+import sys
+sys.stdin = open("2070.txt", "r")
 
-num = int(input())
-for i in range(0, num):
+T = int(input())
+for i in range(0, T):
         a, b = input().split()
         a = int(a)
         b = int(b)
