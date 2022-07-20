@@ -1,6 +1,6 @@
-import sys
+# import sys
 
-sys.stdin = open("문제 21.txt", "r")
+# sys.stdin = open("문제 21.txt", "r")
 
 number = int(input())
 
