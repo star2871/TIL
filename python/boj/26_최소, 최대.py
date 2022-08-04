@@ -1,5 +1,12 @@
-a = 20, 10, 35, 30, 7
-b = a.max(a)
-c = a.min(a)
-print(c,b)
-    
+import sys
+
+sys.stdin = open("26_최소, 최대.txt")
+
+
+
+T = int(input())
+
+n = list(map(int, input().split())) # 가로로 나열
+
+
+print(min(n), max(n))
