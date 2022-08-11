@@ -6,6 +6,7 @@ T = int(input())
 
 for tc in range(1,T+1):
     a, b = list(map(str, input().split()))
+    # 여기를 나눠서 생각 못함
     x = sorted(a)
     y = sorted(b)
 
