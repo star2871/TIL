@@ -3,7 +3,7 @@
 ## 2. CSS(Cascading Style Sheets)는 웹 페이지에 스타일과 레이아웃을 적용할 때 사용한다. 예시를 몇 가지 들자면 글꼴, 색상, 크기를 조절하고, 콘텐츠의 간격을 조정하고, 페이지를 여러개의 열로 나누고, 애니메이션 등 장식을 추가할 수도 있다. 이 모듈에서는 CSS의 기본적인 작동 원리와 구문의 생김새, HTML에 실제로 적용하는 법을 배우면서 다음 과정으로 가는 길을 닦는다.
 ## 3. CSS는 스타일을 지정하기 위한 언어를 선택하고, 스타일을 지정한다.
 ## 4. CSS 구문
-![[CSS 구문.jpg]]
+![[CSS 구문.jpg]](https://github.com/star2871/TIL/blob/master/web/web%201%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/CSS%20%EA%B5%AC%EB%AC%B8.jpg)
 - CSS 구문은 선택자를 통해 스타일을 지정할 HTML 요소를 선택
 - 중괄호 안에서는 속성과 값, 하나의 쌍으로 이루어진 선언을 진행
 - 각 쌍은 선택한 요소의 속성, 속성에 부여할 값을 의미
@@ -12,11 +12,11 @@
 
 ## 5. CSS 정의 방법
 - 인라인(inline)
-![[CSS 인라인.jpg]]
+![[CSS 인라인.jpg]](https://github.com/star2871/TIL/blob/master/web/web%201%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/CSS%20%EC%9D%B8%EB%9D%BC%EC%9D%B8.jpg)
 - 내부 참조(embedding) - `<style>`
-![[CSS 내부참조.jpg]]
+![[CSS 내부참조.jpg]](https://github.com/star2871/TIL/blob/master/web/web%201%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/CSS%20%EB%82%B4%EB%B6%80%EC%B0%B8%EC%A1%B0.jpg)
 - 외부 참조(link file) – 분리된 CSS 파일
-![[CSS 외부참조.jpg]]
+![[CSS 외부참조.jpg]](https://github.com/star2871/TIL/blob/master/web/web%201%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/CSS%20%EC%99%B8%EB%B6%80%EC%B0%B8%EC%A1%B0.jpg)
 ## 6. CSS with 개발자 도구
 - styles : 해당 요소에 선언된 모든 CSS
 ![[CSS 개발자 도구 styles.jpg]]

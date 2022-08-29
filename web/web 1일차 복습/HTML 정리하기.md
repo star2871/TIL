@@ -241,7 +241,7 @@ body {
 }
 ```
 ## 8. 속성(attribute)
-![[속성에서 속성명과 속성값.jpg]]
+![[속성에서 속성명과 속성값.jpg]](https://github.com/star2871/TIL/blob/master/web/web%201%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/%EC%86%8D%EC%84%B1%EC%97%90%EC%84%9C%20%EC%86%8D%EC%84%B1%EB%AA%85%EA%B3%BC%20%EC%86%8D%EC%84%B1%EA%B0%92.jpg)
 - 속성 작성 방식 통일하기
 	- 공백은 No!, "(쌍따움표)사용
 - 속성을 통해 태그의 부가적인 정보를 설정할 수 있다. 
@@ -258,7 +258,7 @@ body {
 	• tabindex : 요소의 탭 순서
 
 - HTML 코드 예시
-![[HTML 코드 예시.jpg]]
+![[HTML 코드 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%201%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/HTML%20%EC%BD%94%EB%93%9C%20%EC%98%88%EC%8B%9C.jpg)
 
 ## 9. 렌더링(Rendering)
 - 웹사이트 코드를 사용자가 보게 되는 웹 사이트로 바꾸는 과정
@@ -274,6 +274,6 @@ body {
 - 블록 요소는 한 줄 모두 사용
 
 ## 12. 텍스트 요소
-![[텍스트 요소.jpg]]
+![[텍스트 요소.jpg]](https://github.com/star2871/TIL/blob/master/web/web%201%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%9A%94%EC%86%8C.jpg)
 ## 13. 그룹 컨텐츠
-![[그룹컨텐츠.jpg]]
+![[그룹컨텐츠.jpg]](https://github.com/star2871/TIL/blob/master/web/web%201%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/%EA%B7%B8%EB%A3%B9%EC%BB%A8%ED%85%90%EC%B8%A0.jpg)
