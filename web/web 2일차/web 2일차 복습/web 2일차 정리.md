@@ -12,7 +12,7 @@
 ### 4. rem
 - (바로 위, 부모 요소에 대한) 상속의 영향을 받지 않음
 - 최상위 요소(html)의 사이즈를 기준으로 배수 단위를 가짐
-![[화면 캡처 2022-08-30 220148.jpg]]
+![[크기 단위.jpg]](https://github.com/star2871/TIL/blob/master/web/web%202%EC%9D%BC%EC%B0%A8/web%202%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/%ED%81%AC%EA%B8%B0%20%EB%8B%A8%EC%9C%84.jpg)
 - 웹 페이지를 방문한 유저에게 바로 보이게 되는 웹 컨텐츠의 영역 (디바이스 화면)
 - 디바이스의 viewport를 기준으로 상대적인 사이즈가 결정됨
 - 예) vw, vh, vmin, vmax
@@ -29,7 +29,7 @@
 - 색상, 채도, 명도를 통해 특정 색을 표현하는 방식
 - 색상, 채도, 명도
 ### 4. a는 alpah(투명도)
-![[색상 단위.jpg]]
+![[색상 단위.jpg]](https://github.com/star2871/TIL/blob/master/web/web%202%EC%9D%BC%EC%B0%A8/web%202%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/%EC%83%89%EC%83%81%20%EB%8B%A8%EC%9C%84.jpg)
 
 ## CSS 문서 표현
 ### 1. 텍스트
