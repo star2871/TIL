@@ -1,1 +1,34 @@
 /* 아래에 CSS를 작성해주세요. */
+.card {
+  width: 25rem;
+  height: 25rem;
+
+}
+.card-image {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 0.5rem;
+}
+.blue-font {
+  font-size: 12px;
+  margin-bottom: 0rem;
+}
+.jelia-font {
+  font-size: 15px;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+.percent-num {
+  font-size: 18px;
+  color:#a2d2ff;
+  margin: 0rem;
+}
+.prize {
+  font-size: 18px;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+.review {
+  margin-top: 0rem;
+  color: #6AC793;
+}
