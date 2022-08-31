@@ -15,7 +15,6 @@
 - 요소를 일반적인 문서 흐름에서 제거 후 레이아웃에 공간을 차지하지 않음 (normal flow에서 벗어남) 
 - static이 아닌 가장 가까이 있는 부모/조상 요소를 기준으로 이동 (없는 경우 브라우저 화면 기준으로 이동)
 ![[absolute.jpg]](https://github.com/star2871/TIL/blob/master/web/web%203%EC%9D%BC%EC%B0%A8/web%203%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/absolute.jpg)
-
 absolute 예시
 ![[absolute 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%203%EC%9D%BC%EC%B0%A8/web%203%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/absolute%20%EC%98%88%EC%8B%9C.jpg)
 ### 3. fixed : 고정 위치
