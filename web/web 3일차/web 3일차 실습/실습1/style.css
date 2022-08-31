@@ -1,0 +1,41 @@
+/* 아래에 CSS를 작성해주세요. */
+.title {
+  text-align: center;
+}
+
+.subtext {
+  display: block;
+  font-size: 16px;
+}
+
+.item-list {
+  width: 900px;
+}
+
+.item {
+  width: 300px;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.item-img {
+  width:100%;
+  border-radius: 1rem;
+}
+
+.bespoke {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.bespoke-font {
+  font-size: 15px;
+}
+
+.finish-font {
+  font-size: 12px;
+  color: rgb(182, 121, 131);
+}
+.inster {
+  font-size: 11px;
+}
