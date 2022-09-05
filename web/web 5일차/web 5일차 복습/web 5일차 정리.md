@@ -1,15 +1,15 @@
 # HTML 문서 구조화
 ## table의 각 영역을 명시하기 위해`<thead>` `<tbody>` `<tfoot>` 요소를 활용
-![[table 예시.jpg]]
+![[table 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/table%20%EC%98%88%EC%8B%9C.jpg)
 
 ## `<tr>`으로 가로 줄을 구성하고 내부에는 `<th>` 혹은 `<td>`로 셀을 구성
-![[tr 예시.jpg]]
+![[tr 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/tr%20%EC%98%88%EC%8B%9C.jpg)
 
 ## colspan, rowspan 속성을 활요하여 셀 병합
-![[colspan 예시.jpg]]
+![[colspan 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/colspan%20%EC%98%88%EC%8B%9C.jpg)
 
 ## `<caption>`을 통해 표 설명 또는 제목을 나타냄
-![[caption 예시.jpg]]
+![[caption 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/caption%20%EC%98%88%EC%8B%9C.jpg)
 
 ## table 태그 기본 구성
 ### thead
@@ -106,7 +106,7 @@
 <input type="text" name="q">
 </form>
 ```
-![[q=HTML 예시.jpg]]
+![[q=HTML 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/q%3DHTML%20%EC%98%88%EC%8B%9C.jpg)
 ```
 <form action="/search" method="GET">
 <input type="text" name="q">
@@ -177,7 +177,7 @@
 
 </body>
 ```
-![[vscode 직접작성예시.jpg]]
+![[vscode 직접작성예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/vscode%20%EC%A7%81%EC%A0%91%EC%9E%91%EC%84%B1%EC%98%88%EC%8B%9C.jpg)
 
 # input 유형-일반
 ## 일반적으로 입력을 받기 위하여 제공되며 타입별로 HTML기본 검증 혹은 추가 속성을 활용할 수 있음
@@ -186,7 +186,7 @@
 ### email : 이메일 형식이 아닌 경우 form 제출 불가
 ### number : min, max, step 속성을 활용하여 숫자 범위 설정 가능
 ### file : accept 속성을 활용하여 파일 타입 지정 가능
-![[input 유형 일반 예시.jpg]]
+![[input 유형 일반 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/input%20%EC%9C%A0%ED%98%95%20%EC%9D%BC%EB%B0%98%20%EC%98%88%EC%8B%9C.jpg)
 
 # input 유형 – 항목 중 선택
 ## 일반적으로 label 태그와 함께 사용하여 선택 항목을 작성함
@@ -214,7 +214,7 @@
 
     </div>
 ```
-![[input 유형 항목 중 선택.jpg]]
+![[input 유형 항목 중 선택.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/input%20%EC%9C%A0%ED%98%95%20%ED%95%AD%EB%AA%A9%20%EC%A4%91%20%EC%84%A0%ED%83%9D.jpg)
 
 # input 유형-기타
 ## 다양한 종류의 input을 위한 picker를 제공
@@ -222,7 +222,7 @@
 ### date : date picker
 ## hidden input을 활용하여 사용자 입력을 받지 않고 서버에 전송되어야 하는 값을 설정
 ### hidden : 사용자에게 보이지 않는 input
-![[input 유형 기타 예시.jpg]]
+![[input 유형 기타 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/input%20%EC%9C%A0%ED%98%95%20%EA%B8%B0%ED%83%80%20%EC%98%88%EC%8B%9C.jpg)
 
 # Bootstrap
 ## Build fast, responsive sites with Bootstrap. 
@@ -232,10 +232,10 @@
 ## Content Delivery(Distribution) Network
 ### 컨텐츠(CSS, JS, Image, Text 등)을 효율적으로 전달하기 위해 여러 노드에 가진 네트워크에 데이터를 제공하는 시스템.
 #### 개별 end-user의 가까운 서버를 통해 빠르게 전달 가능(지리적 이점) 외부 서버를 활용함으로써 본인 서버의 부하가 적어짐
-![[CDN CSS JS 예시.jpg]]
+![[CDN CSS JS 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/CDN%20CSS%20JS%20%EC%98%88%EC%8B%9C.jpg)
 
 # spacing (margin and padding)
-![[spacing 예시.jpg]]
+![[spacing 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/spacing%20%EC%98%88%EC%8B%9C.jpg)
 ```
 <div class="mt-3 ms-5">bootstrap-spacing</div>
 ```
@@ -245,10 +245,10 @@
 - `p` - for classes that set `padding`
 
 ## Where sides is one of:
-![[spacing sides 예시.jpg]]
+![[spacing sides 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/spacing%20sides%20%EC%98%88%EC%8B%9C.jpg)
 ## Where size is one of:
-![[spacing size 예시.jpg]]
-![[spacing size 크기 예시.jpg]]
+![[spacing size 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/spacing%20size%20%EC%98%88%EC%8B%9C.jpg)
+![[spacing size 크기 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/spacing%20size%20%ED%81%AC%EA%B8%B0%20%EC%98%88%EC%8B%9C.jpg)
 
 ## .mx-0
 ### 가로(왼쪽, 오른쪽) margin이 0
@@ -258,16 +258,16 @@
 ### 위 아래 padding이 0
 
 ## spacing 종합
-![[spacing 종합 예시.jpg]]
+![[spacing 종합 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/spacing%20%EC%A2%85%ED%95%A9%20%EC%98%88%EC%8B%9C.jpg)
 ## Color
-![[color 예시.jpg]]
+![[color 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/color%20%EC%98%88%EC%8B%9C.jpg)
 
 ## Text
-![[text 예시.jpg]]
+![[text 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/text%20%EC%98%88%EC%8B%9C.jpg)
 
 ## Display
-![[display 예시.jpg]]
+![[display 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/display%20%EC%98%88%EC%8B%9C.jpg)
 
 
 ## Position
-![[position 예시.jpg]]
+![[position 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%205%EC%9D%BC%EC%B0%A8/web%205%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%8C%8C%EC%9D%BC/position%20%EC%98%88%EC%8B%9C.jpg)
