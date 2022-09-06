@@ -3,7 +3,7 @@
 ### Bootstrap의 다양한 UI 요소를 활용할 수 있음
 ### 아래 Components 탭 및 검색으로 원하는 UI 요소를 찾을 수 있음 
 ### 기본 제공된 Components를 변환해서 활용
-![[Components 활용 예시.jpg]]
+![[Components 활용 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%206%EC%9D%BC%EC%B0%A8/web%206%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/Components%20%ED%99%9C%EC%9A%A9%20%EC%98%88%EC%8B%9C.jpg)
 ## Bootstrap 가져오는 코드
 ```html
 <!doctype html>
@@ -41,7 +41,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.j
 
 <button type="button" class="btn btn-link">Link</button>
 ```
-![[버튼 예시.jpg]]
+![[버튼 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%206%EC%9D%BC%EC%B0%A8/web%206%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/%EB%B2%84%ED%8A%BC%20%EC%98%88%EC%8B%9C.jpg)
 ### `<button>`, `<a>`, `<input>` 거의 같은 역할로 사용 할수 있다.
 ### `<button>`은 Outline, Sizes, Disabled(비활성화 상태), Block, plugin, Toggle states(상태 변환)등 다양하게 사용 할 수 있다.
 
@@ -59,12 +59,12 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.j
   </ul>
 </div>
 ```
-![[dropdown button.jpg]]
+![[dropdown button.jpg]](https://github.com/star2871/TIL/blob/master/web/web%206%EC%9D%BC%EC%B0%A8/web%206%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/dropdown%20button.jpg)
 ### `<dropdowns>`은 `<botton>`와 함께 사용한다. Split button, Sizing, 위에 그림에서 하얀부분 배경색을 바꾸는 것, Centered, Dropup, Dropend, Dropstart, Menu items, Active, Disabled, Menu alignment,  Responsive alignment, Alignment options, Menu content(Headers, Dividers, Text, Forms), Dropdown options, Auto close behavior등이 있다.
 
 ## Forms
 ### form-control 클래스를 사용해 `<input>` 및 `<form>`태그를 스타일링할 수 있다.
-![[form 예시.jpg]]
+![[form 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%206%EC%9D%BC%EC%B0%A8/web%206%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/form%20%EC%98%88%EC%8B%9C.jpg)
 ```html
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -79,7 +79,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.j
 
 ## Navbar
 ### navar 클래스를 활용하면 네비게이션 바를 제작할 수 있다.
-![[Navbar 예시.jpg]]
+![[Navbar 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%206%EC%9D%BC%EC%B0%A8/web%206%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/Navbar%20%EC%98%88%EC%8B%9C.jpg)
 ```html
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
@@ -122,7 +122,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.j
 
 ## Carousel
 ### 콘텐츠(사진)을 순환시키기 위한 슬라이드쇼
-![[Carousel 예시.jpg]]
+![[Carousel 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%206%EC%9D%BC%EC%B0%A8/web%206%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/Carousel%20%EC%98%88%EC%8B%9C.jpg)
 ```html
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -152,8 +152,8 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.j
 ### 사용자와 상호작용 하기 위해서 사용하며, 긴급 상황을 알리는 데 주로 사용
 ### 현재 열려 있는 페이지 위에 또 다른 레이어를 띄움 
 ### 페이지를 이동하면 자연스럽게 사라짐(제거를 하지 않고도 배경 클릭시 사라짐 – 옵션에 따라 다름)
-![[Modal 예시1.jpg]]
-![[Modal 예시2.jpg]]
+![[Modal 예시1.jpg]](https://github.com/star2871/TIL/blob/master/web/web%206%EC%9D%BC%EC%B0%A8/web%206%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/Modal%20%EC%98%88%EC%8B%9C1.jpg)
+![[Modal 예시2.jpg]](https://github.com/star2871/TIL/blob/master/web/web%206%EC%9D%BC%EC%B0%A8/web%206%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/Modal%20%EC%98%88%EC%8B%9C2.jpg)
 ```html
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
