@@ -6,7 +6,7 @@
 - Column : 실제 컨텐츠를 포함하는 부분 
 - Gutter : 칼럼과 칼럼 사이의 공간 (사이 간격) 
 - Container : Column들을 담고 있는 공간
-![[grid 예시.jpg]]
+![[grid 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%207%EC%9D%BC%EC%B0%A8/web%207%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/grid%20%EC%98%88%EC%8B%9C.jpg)
 
 ## Bootstrap Grid system은 flexbox로 제작됨
 ## container, rows, column으로 컨텐츠를 배치하고 정렬
@@ -24,7 +24,7 @@
 ```
 
 ## Grid system breakpoints
-![[grid system breakpoints.jpg]]
+![[grid system breakpoints.jpg]](https://github.com/star2871/TIL/blob/master/web/web%207%EC%9D%BC%EC%B0%A8/web%207%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/grid%20system%20breakpoints.jpg)
 
 ## Grid system breakpoints 연습하기
 
@@ -40,7 +40,7 @@
 </div>
 
 ```
-![[gird 그림 예시.jpg]]
+![[gird 그림 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%207%EC%9D%BC%EC%B0%A8/web%207%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/gird%20%EA%B7%B8%EB%A6%BC%20%EC%98%88%EC%8B%9C.jpg)
 
 ### grid 2 예시
 ```
@@ -86,7 +86,7 @@
 
 </div>
 ```
-![[gird 그림2 예시.jpg]]
+![[gird 그림2 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%207%EC%9D%BC%EC%B0%A8/web%207%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/gird%20%EA%B7%B8%EB%A6%BC2%20%EC%98%88%EC%8B%9C.jpg)
 
 ## grid 3 예시
 ```
@@ -102,7 +102,7 @@
 
 <hr>
 ```
-![[grid 그림3 예시.jpg]]
+![[grid 그림3 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%207%EC%9D%BC%EC%B0%A8/web%207%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/grid%20%EA%B7%B8%EB%A6%BC3%20%EC%98%88%EC%8B%9C.jpg)
 
 ## grid 4 예시
 ```
@@ -166,7 +166,7 @@
 
 <hr>
 ```
-![[grid 그림4 예시.jpg]]
+![[grid 그림4 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%207%EC%9D%BC%EC%B0%A8/web%207%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/grid%20%EA%B7%B8%EB%A6%BC4%20%EC%98%88%EC%8B%9C.jpg)
 
 ## grid 5 예시
 ```
@@ -181,7 +181,7 @@
 <hr>
 ```
 
-![[grid 그림5 예시.jpg]]
+![[grid 그림5 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%207%EC%9D%BC%EC%B0%A8/web%207%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/grid%20%EA%B7%B8%EB%A6%BC5%20%EC%98%88%EC%8B%9C.jpg)
 
 ## grid 6 예시
 ```
@@ -195,7 +195,7 @@
 
 </div>
 ```
-![[grid 그림6 예시.jpg]]
+![[grid 그림6 예시.jpg]](https://github.com/star2871/TIL/blob/master/web/web%207%EC%9D%BC%EC%B0%A8/web%207%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/grid%20%EA%B7%B8%EB%A6%BC6%20%EC%98%88%EC%8B%9C.jpg)
 
 ## @media 코드
 ```
