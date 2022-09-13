@@ -62,14 +62,35 @@
         </div>
       </div>
     </nav>
-    <div class="row">
-      <aside class="bg-primary col-md-1-width col-lg-1">
-        <p class="my-auto d-flex justify-content-center p-3"><a href="#" class="text-decoration-none text-white">게시판 목록</a></p>
-        <p class="my-auto d-flex justify-content-center p-3"><a href="#" class="text-decoration-none text-white">자유 게시판</a></p>
-        <p class="my-auto d-flex justify-content-center p-3"><a href="#" class="text-decoration-none text-white">토론 게시판</a></p>
+    <div class="row justify-content-around">
+      <aside class="bg-primary col-md-1-width col-lg-1 p-0 mx-3" style="width: 90px;">
+        <p class="my-auto d-inline-block"><a href="#" class="text-decoration-none text-white">게시판 목록</a></p>
+        <p class="my-auto d-inline-block"><a href="#" class="text-decoration-none text-white">자유 게시판</a></p>
+        <p class="my-auto d-inline-block"><a href="#" class="text-decoration-none text-white">토론 게시판</a></p>
       </aside>
-      <Section class="card mx-0 bg-secondary col-md-1-width col-lg-5">
+      <Section class="card bg-secondary col-md-1-width col-lg-5">
         <a>자유 게시판</a>
+        <div class="col-12 d-block d-lg-none">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">1</h4>
+              <h5 class="card-subtitle mb-2">One</h5>
+              <p class="card-text">Last</p>
+              <p class="card-text">@mdo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-block d-lg-none">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">2</h4>
+              <h5 class="card-subtitle mb-2">Two</h5>
+              <p class="card-text">Last</p>
+              <p class="card-text">@fat</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-lg-block">
         <table class="table table-primary">
           <thead>
             <tr>
@@ -150,9 +171,31 @@
 
           </tbody>
         </table>
+        </div>
       </Section>
       <Section class="mx-0 bg-secondary col-md-1-width col-lg-5">
         <a>토론 게시판</a>
+        <div class="col-12 d-block d-lg-none">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">1</h4>
+              <h5 class="card-subtitle mb-2">One</h5>
+              <p class="card-text">Last</p>
+              <p class="card-text">@mdo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-block d-lg-none">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">2</h4>
+              <h5 class="card-subtitle mb-2">Two</h5>
+              <p class="card-text">Last</p>
+              <p class="card-text">@fat</p>
+            </div>
+          </div>
+        </div> 
+        <div class="d-none d-lg-block">
         <table class="table table-primary">
           <thead>
             <tr>
@@ -233,6 +276,7 @@
 
           </tbody>
         </table>
+      </div>
       </Section>
   
     </div>
