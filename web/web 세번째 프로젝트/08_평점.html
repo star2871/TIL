@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>nav_footer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="Logo" width="50" height="50">
+        </a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="./03_community.html">Community</a>
+            </li>
+            <li class="nav-item">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-dark text-white-50 px-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Login
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalToggleLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="mb-3 m-3">
+                      <label for="exampleInputEmail1" class="form-label fw-bold" >Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3 m-3">
+                      <label for="exampleInputPassword1" class="form-label fw-bold">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check m-3">
+                      <input type="checkbox" class="form-check-input fw-bold" id="exampleCheck1">
+                      <label class="form-check-label fw-bold" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <div class="modal-footer m-3">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Summit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-between mx-auto" style="width:1200px;">
+      <div style="width:250px;height:350px">
+        <div class="card border-light" style="width:250px;height:350px">
+          <div class="card-body">
+            <a href="./images/movie1.jpg">
+              <div class="container-fluid position-relative">
+                <img style="width:210px;height:300px;" class="container-fluid p-0" src="./images/movie1.jpg" alt="#">
+                
+                <div class="position-absolute bottom-0 end-0">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z"/>
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card border-light" style="height:350px">
+          <div class="card-body p-0 mx-2">
+            <h5 class="card-title mb-0">쇼생크 탈출</h5>
+            <p class="card-text">The Shawshank Redemption, 1994</p>
+          </div>
+          <div class="d-flex">
+            <div class="mx-2">
+              <p class="mb-0">개봉</p>
+              <p class="mb-0">재개봉</p>
+              <p class="mb-0">장르</p>
+              <p class="mb-0">국가</p>
+              <p class="mb-0">등급</p>
+              <p>러닝타임</p>
+            </div>
+            <div class="mx-2">
+              <p class="mb-0">	1995.02.04</p>
+              <p class="mb-0">	2016.02.24</p>
+              <p class="mb-0">	드라마</p>
+              <p class="mb-0">미국</p>
+              <p class="mb-0">	15세이상관람가</p>
+              <p>	133분 , 142분(재개봉)</p>
+            </div>
+            <div class="mx-2">
+              <p class="mb-0">평점</p>
+              <p class="mb-0">누적관객</p>
+              <p class="mb-0"></p>
+              <p class="mb-0">영화정보</p>
+              <p class="mb-0"></p>
+              <p></p>
+            </div>
+            <div class="mx-2">
+              <p class="mb-0">9.6</p>
+              <p class="mb-0">11,413명</p>
+              <p class="mb-0"></p>
+              <p class="mb-0"></p>
+              <p class="mb-0"></p>
+              <p></p>
+            </div>
+          </div>
+          <div>
+            <button type="button" class="btn btn-light btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+              </svg>
+              왓챠</button>
+            <button type="button" class="btn btn-light btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hdd-network-fill" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h5.5v3A1.5 1.5 0 0 0 6 11.5H.5a.5.5 0 0 0 0 1H6A1.5 1.5 0 0 0 7.5 14h1a1.5 1.5 0 0 0 1.5-1.5h5.5a.5.5 0 0 0 0-1H10A1.5 1.5 0 0 0 8.5 10V7H14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm.5 3a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1z"/>
+              </svg>
+              넷플릭스</button>
+            <button type="button" class="btn btn-light btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+               <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"/>
+              </svg>
+              웨이브</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column mx-auto" style="width:1200px;">
+      <div class="card border-light">
+        <div class="card-body">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item"><a href="./05_movie.html" class="text-decoration-none text-black"><span>주요정보</span></a></li>
+            <li class="list-group-item"><a href="./06_출연_제작.html" class="text-decoration-none text-black"><span>출연/제작</span></a></li>
+            <li class="list-group-item"><a href="./07_영상_포토.html" class="text-decoration-none text-black"><span>영상/포토</span></a></li>
+            <li class="list-group-item"><a href="./08_평점.html" class="text-decoration-none text-black"><span>평점</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section class="container">
+
+
+
+      <div class="tab-content" id="myTabContent"> 
+        <!-- <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <img src="images/bay_10-wallpaper-1920x1080.jpg" class="d-block w-100" alt="..."> 
+        </div>
+    
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <img src="images/peaceful-wallpaper-1920x600.jpg" class="d-block w-100" alt="...">  -->
+    
+        </div>
+      <!-- 영상 -->
+        <!-- <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+          <div>
+            <h3 class="mx-2 my-3 fw-bold">영상</h3>
+            <div style="height: 600px;" class="mb-3">
+            <img src="images/space_aesthetic-wallpaper-1920x1080.jpg" class="d-block w-100 h-100 my-3" alt="..."> 
+            </div>
+            <h4>추천 영상</h4>
+            <p class="fw-light">2016.03.03 재생 1,022</p>
+    
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row row-cols-4 g-4">
+                    <div class="col d-flex flex-column">
+                      <img src="images/123.jpg" class="d-block w-100 h-100 my-3" alt="..."> 
+                      <h5>추천 영상</h5>
+                      <p class="fw-light fs-6">2016.03.03 재생 1,022</p>  
+                    </div>
+                    <div class="col d-flex flex-column align-content-around">
+                      <img src="images/123.jpg" class="d-block w-100 h-100 my-3" alt="..."> 
+                      <h5>추천 영상</h5>
+                      <p class="fw-light fs-6">2016.03.03 재생 1,022</p>  
+                    </div>  
+                    <div class="col d-flex flex-column align-content-around">
+                      <img src="images/123.jpg" class="d-block w-100 h-100 my-3" alt="..."> 
+                      <h5>추천 영상</h5>
+                      <p class="fw-light fs-6">2016.03.03 재생 1,022</p>  
+                    </div>  
+                    <div class="col d-flex flex-column align-content-around">
+                      <img src="images/123.jpg" class="d-block w-100 h-100 my-3" alt="..."> 
+                      <h5>추천 영상</h5>
+                      <p class="fw-light fs-6">2016.03.03 재생 1,022</p>  
+                    </div>  
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row row-cols-4 g-4">
+                    <div class="col d-flex flex-column">
+                      <img src="images/123.jpg" class="d-block w-100 h-100 my-3" alt="..."> 
+                      <h5>추천 영상</h5>
+                      <p class="fw-light fs-6">2016.03.03 재생 1,022</p>  
+                    </div>
+                    <div class="col d-flex flex-column align-content-around">
+                      <img src="images/123.jpg" class="d-block w-100 h-100 my-3" alt="..."> 
+                      <h5>추천 영상</h5>
+                      <p class="fw-light fs-6">2016.03.03 재생 1,022</p>  
+                    </div>   
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev about" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div> 
+    
+            <hr>
+    
+            <h4 class="mt-5 mb-3">포토</h4>
+    
+            <div class="text-center mb-5">
+              <div class="row row-cols-lg-4 g-2 g-lg-3">
+                <div class="col">
+                    <img src="images/2.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div> 
+                <div class="col">
+                    <img src="images/3.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div>
+                <div class="col">
+                  <img src="images/4.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div>
+                <div class="col">
+                  <img src="images/5.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div> 
+                <div class="col">
+                  <img src="images/6.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div> 
+                <div class="col">
+                  <img src="images/7.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div> 
+                <div class="col">
+                  <img src="images/8.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div>
+                <div class="col">
+                  <img src="images/9.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div>
+              </div>  
+            </div> 
+            <div class="text-center mb-3">
+            <button type="button" class="btn btn-outline-secondary rounded-4 px-3" data-bs-toggle="collapse" data-bs-target="#a">
+            더보기 
+            <img src="images/chevron-down.svg" class="" alt="...">  
+            </button>
+            </div>
+    
+            <div id="a" class="collapse">
+              <div class="row row-cols-lg-4 g-2 g-lg-3">
+                <div class="col">
+                    <img src="images/2.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div> 
+                <div class="col">
+                    <img src="images/3.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div>
+                <div class="col">
+                  <img src="images/4.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div>
+                <div class="col">
+                  <img src="images/5.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div> 
+                <div class="col">
+                  <img src="images/6.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div> 
+                <div class="col">
+                  <img src="images/7.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div> 
+                <div class="col">
+                  <img src="images/8.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div>
+                <div class="col">
+                  <img src="images/9.jpg" class="d-block w-100 h-100 my-3 rounded-2" alt=""> 
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div> -->
+    
+        
+        <!-- 평점 -->
+        <div class="tab-pane fade show active" id="a-tab-pane" role="tabpanel" aria-labelledby="a-tab" tabindex="0">
+          <div class="my-5 mx-2">
+          <h4 class="my-3"><span class="fw-bold">네티즌 평점</span> <span class="text-danger ">9.6점</span> <span class="fw-light">(1603명)</span></h4>   
+          <!-- 별점 -->
+          <div class="border p-2">
+            <img src="images/star.svg" class=""><img src="images/star.svg" class=""><img src="images/star.svg" class=""><img src="images/star.svg" class=""><img src="images/star.svg" class="">
+          </div>
+          <div class="border p-2 border-top-0">
+            <p class="m-auto fw-light">로그인 해주세요.</p>
+          </div>
+          <!-- <p class="my-3">추천댓글 <img data-bs-toggle="modal" data-bs-target="#aaaa" style="width: 15px; height: 15px;" src="images/help-circle.svg"> <span class="fw-bold"> 찬반순</span> 최신순 과거순</p> -->
+          <!-- <div id="aaaa" class="modal">
+           asdfas
+          </div> -->
+          <ul class="nav nav-tabs my-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                추천댓글 <img data-bs-toggle="modal" data-bs-target="#aaaa" style="width: 15px; height: 15px;" src="images/help-circle.svg">
+              </button> 
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">찬반순</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">최신순</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">과거순</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+          </div>
+    
+          </div>  
+        </div>
+      
+    
+      </section>
+    <footer class="mt-auto fixed-bottom">
+      <p class="text-white bg-black d-flex justify-content-center align-items-center m-0">© 2022 Movie Ranking</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
