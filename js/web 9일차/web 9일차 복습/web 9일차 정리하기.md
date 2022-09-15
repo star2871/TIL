@@ -106,6 +106,7 @@ let y = 13
 - Event Listener를 가질 수 있는 객체가 구현하는 DOM 인터페이스
 ### Node
 - 여러 가지 DOM 타입들이 상속하는 인터페이스
+
 ![[Event Target Node.jpg]](https://github.com/star2871/TIL/blob/master/js/web%209%EC%9D%BC%EC%B0%A8/web%209%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%9E%90%EB%A3%8C/Event%20Target%20Node.jpg)
 
 ### Element
@@ -117,6 +118,7 @@ let y = 13
 ### HTMLElement 
 - 모든 종류의 HTML 요소 
 - 부모 element의 속성 상속
+
 ![[Event Target Node 1.jpg]](https://github.com/star2871/TIL/blob/master/js/web%209%EC%9D%BC%EC%B0%A8/web%209%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%9E%90%EB%A3%8C/Element%20Document%20HTML.jpg)
 
 ## DOM 선택 – 선택 관련 메서드
