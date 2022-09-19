@@ -6,7 +6,7 @@
 - ### 이벤트 발생
 	- #### 마우스를 클릭하거나 키보드를 누르는 등 사용자 행동으로 발생할 수도 있음
 	- #### 특정 메서드를 호출(Element.click())하여 프로그래밍적으로도 만들어 낼 수 있음
-![[이벤트 예시.jpg]]
+![[이벤트 예시.jpg]](https://github.com/star2871/TIL/blob/master/js/web%2011%EC%9D%BC%EC%B0%A8/web%2011%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%98%88%EC%8B%9C.jpg)
 
 ## Event의 역할 (1/3)
 ### 1. "~하면 ~한다."
@@ -44,7 +44,7 @@
 ```
 alert('입력한 글자가 8글자 이상이어야 합니다.');
 ```
-![[alert 예시.jpg]]
+![[alert 예시.jpg]](https://github.com/star2871/TIL/blob/master/js/web%2011%EC%9D%BC%EC%B0%A8/web%2011%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/alert%20%EC%98%88%EC%8B%9C.jpg)
 
 ### if문을 사용하면 글자수 제한을 걸수 있고 비밀번호 일치 불일치도 넣을수 있다.
 ```
@@ -94,6 +94,6 @@ alert('입력한 글자가 8글자 이상이어야 합니다.');
 
 </script>
 ```
-![[비밀번호 일치.jpg]]
-![[비밀번호 불일치.jpg]]
-![[alert 예시 1.jpg]]
+![[비밀번호 일치.jpg]](https://github.com/star2871/TIL/blob/master/js/web%2011%EC%9D%BC%EC%B0%A8/web%2011%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8%20%EC%9D%BC%EC%B9%98.jpg)
+![[비밀번호 불일치.jpg]](https://github.com/star2871/TIL/blob/master/js/web%2011%EC%9D%BC%EC%B0%A8/web%2011%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8%20%EB%B6%88%EC%9D%BC%EC%B9%98.jpg)
+![[alert 예시 1.jpg]](https://github.com/star2871/TIL/blob/master/js/web%2011%EC%9D%BC%EC%B0%A8/web%2011%EC%9D%BC%EC%B0%A8%20%EB%B3%B5%EC%8A%B5/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%90%EB%A3%8C/alert%20%EC%98%88%EC%8B%9C.jpg)
