@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lotto number</title>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="title">1033회차 로또 번호 추첨</h1>
+    <div class="btn">
+      <button onClick="window.location.reload()">어림없지, 다시한번!</button>
+    </div>
+    <div class="board">
+      <div class="nums">
+        {% for nums in lotto %}
+        <div>
+          {% for num in nums %}
+          <span>{{ num }}</span>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+      <div class="result">
+        {% for rank in ranks %}
+        <div>{{ rank }}</div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
