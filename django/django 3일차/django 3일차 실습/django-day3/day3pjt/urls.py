@@ -20,7 +20,10 @@ from day3 import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.index),
-    path("number/<int:num>", views.print_number),
-    path("print-text/", views.print_text),
-    path("print-calculation/", views.print_calculation),
+    path("print-number/<int:id>", views.print_number),
+    path("print-calculation/<int:a>/<int:b>", views.print_calculation),
+    path("print-past/", views.print_past),
+    path("print-name/", views.print_name),
+    path("print-lorem/", views.print_lorem),
+    path("lorem-show/", views.lorem_show),
 ]
