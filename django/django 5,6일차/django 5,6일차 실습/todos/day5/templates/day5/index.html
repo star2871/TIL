@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="{% url 'day5:create' %}">
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1" name="content">할일</span>
+    <input type="text" class="form-control" placeholder="할일" aria-label="#" aria-describedby="basic-addon1" max_length="80">
+  </div>
+
+  <div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupSelect01">우선순위</label>
+    <select class="form-select" id="inputGroupSelect01" name="priority">
+      <option selected>우선순위</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text">마감기한</span>
+    <div class="form-floating">
+      <input name="deadline" type="date" class="form-control" id="floatingInputGroup1">
+      <label for="floatingInputGroup1">Deadline</label>
+    </div>
+  </div>
+  <div class="mt-5">
+    <input class="w-100 btn btn-outline-primary" type="submit">
+  </div>
+</form>
+  <table class="table table-hover table-dark">
+    <thead>
+      <tr class="bg-info">
+        <th class="bg-info" scope="col">우선 순위</th>
+        <th class="bg-info" scope="col">할 일 내용</th>
+        <th class="bg-info" scope="col">생성 날짜</th>
+        <th class="bg-info" scope="col">마감 기한</th>
+        <th class="bg-info" scope="col">진행 상태</th>
+        <th class="bg-info" scope="col">상태 변경</th>
+        <th class="bg-info" scope="col">삭제</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for todo in todos %}
+      <tr>
+        <td class="bg-info">{{ todo.priority }}</td>
+        <td class="bg-info">{{ todo.content }}</td>
+        <td class="bg-info">{{ todo.created_at }}</td>
+        <td class="bg-info">{{ todo.dealine }}</td>
+        <td class="bg-info">{{ todo.completed }}</td>
+        <td class="bg-info">
+          <a href="{% url 'day5:change' todo.pk_ %}">
+            <input type="submit" class="btn btn-success" value="변경">
+          </a>
+        </td>
+        <td class="bg-info">
+          <a href="{% url 'day5:delete' todo.pk %}">
+            <input type="submit" class="btn btn-danger" value="삭제">
+          </a>
+        </td>
+      </tr>
+      {% endfor %} 
+    
+    </tbody>
+  </table>
+{% endblock %}
