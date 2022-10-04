@@ -57,3 +57,7 @@ $ django-admin startproject pjt .
 > http://127.0.0.1:8000/articles/create/
 
 > 게시글 DB에 생성하고 index 페이지로 redirect
+
+### 2. 게시글 목록
+
+> DB에서 게시글을 가져와서, template에 전달
