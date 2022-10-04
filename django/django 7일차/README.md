@@ -11,3 +11,10 @@ $ python -m venv venv
 $ source venv/Scripts/activate
 (venv) $
 ```
+### 2. Django 설치 및 기록
+
+```
+$ pip install django==3.2.13
+$ pip install black
+$ pip freeze > requirements.txt
+```
