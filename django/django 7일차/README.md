@@ -18,3 +18,17 @@ $ pip install django==3.2.13
 $ pip install black
 $ pip freeze > requirements.txt
 ```
+
+### 3. Django 프로젝트 생성
+
+```bash
+$ django-admin startproject pjt .
+```
+
+## 2. articles app
+
+### 1. app 생성
+
+### 2. app 등록
+
+## 3. app url 분리
