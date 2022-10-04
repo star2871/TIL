@@ -66,6 +66,14 @@ $ django-admin startproject pjt .
 
 >특정한 글을 본다.
 
->http://127.0.0.1:8000/articles/<int:pk>/
+### 4. 삭제하기
 
-### 4. 수정하기
+>특정한 글을 삭제한다.
+
+>http://127.0.0.1:8000/articles/<int:pk>/delete/
+
+### 5. 수정하기
+
+>특정한 글을 수정한다. => 사용자에게 수정할 수 있는 양식을 제공하고(GET) 특정한 글을 수정한다.(POST)
+
+>http://127.0.0.1:8000/articles/<int:pk>/update/
