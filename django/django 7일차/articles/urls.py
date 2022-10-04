@@ -3,6 +3,6 @@ from . import views
 
 app_name = "articles"
 
-ulpatterns = [
+urlpatterns = [
     path("", views.index, name="index"),
 ]
