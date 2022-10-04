@@ -61,3 +61,11 @@ $ django-admin startproject pjt .
 ### 2. 게시글 목록
 
 > DB에서 게시글을 가져와서, template에 전달
+
+### 3. 상세보기
+
+>특정한 글을 본다.
+
+>http://127.0.0.1:8000/articles/<int:pk>/
+
+### 4. 수정하기
