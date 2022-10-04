@@ -41,3 +41,19 @@ $ django-admin startproject pjt .
 ### 2. 마이그레이션 파일 생성
 
 ### 3. DB 반영(`migrate`)
+
+## 4. CRUD 기능 구현
+
+### 1. 게시글 생성
+
+> 사용자에게 HTML Form 제공, 입력받은 데이터를 처리
+
+#### 1. HTML Form 제공
+
+> http://127.0.0.1:8000/articles/new/
+
+#### 2. 입력받은 데이터 처리
+
+> http://127.0.0.1:8000/articles/create/
+
+> 게시글 DB에 생성하고 index 페이지로 redirect
