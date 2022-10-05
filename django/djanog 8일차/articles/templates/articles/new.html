@@ -4,7 +4,7 @@
   값을 받아서(input : new, value)
   서버에 전송(form : action) -->
 
-<form action="{% url 'articles:create' %}" method="POST">
+<form action="" method="POST">
   {% csrf_token %}
   {{ article_form.as_p }}
   <!-- <label for="title">제목 : </label>
