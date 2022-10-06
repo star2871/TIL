@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block body %}
+  <h1>게시판</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">pk</th>
+        <th scope="col">영화제목</th>
+        <th scope="col">상영시간</th>
+      </tr>
+    </thead>
+    {% for movie in movies %}
+      <tbody>
+        <tr>
+          <td>{{ movie.pk }}</td>
+          <td>
+            <a href="{% url 'movies:detail' movie.pk %}">
+              {{ movie.title }}
+            </a>
+          </td>
+          <td>{{ movie.running_time }}</td>
+        </tr>
+      </tbody>
+    {% endfor %}
+  </table>
+{% endblock %}
