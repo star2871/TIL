@@ -17,7 +17,7 @@ def create(request):
         movie_form = MovieForm(request.POST)
         if movie_form.is_valid():
             movie_form.save()
-            return redirect("moives:index")
+            return redirect("movies:index")
     else:
         movie_form = MovieForm()
     context = {
@@ -55,3 +55,10 @@ def update(request, pk):
         "movie_form": movie_form,
     }
     return render(request, "movies/update.html", context)
+
+
+def delete(request, pk):
+    # pk에 해당하는 글 삭제
+    movie = Movie.objects.get(id=pk)
+    movie.delete()
+    return redirect("movies:index")
