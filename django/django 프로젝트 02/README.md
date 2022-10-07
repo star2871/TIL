@@ -1,1 +1,1 @@
-![README](README/django%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%2002.gif)
+![README](README/django%20project%2002.gif)
