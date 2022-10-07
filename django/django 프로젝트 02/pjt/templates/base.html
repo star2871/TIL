@@ -1,0 +1,47 @@
+{% load django_bootstrap5 %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko-kr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    {% bootstrap_css %}
+    {% block css %}
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+      <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    {% endblock css %}
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class='d-flex'>
+        <div>
+          <a href="{% url 'reviews:index' %}"><img src="{% static 'logo/unity.svg' %}"></a>
+        </div>
+        <div>
+          <a class="navbar-brand mx-1" href="{% url 'reviews:index' %}">movietime</a>
+        </div>
+        <div>
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="{% url 'reviews:list' %}">목록</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="{% url 'reviews:create' %}">추가</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% block body %}{% endblock body %}
+
+  </body>
+  {% bootstrap_javascript %}
+
+</html>

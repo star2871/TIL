@@ -1,0 +1,12 @@
+a { text-decoration:none !important; }
+
+* {
+  font-family: 'Hi Melody', cursive;
+  color: #4169e1;
+}
+.navbar-nav {
+  color: #4169e1;
+}
+.navbar-brand {
+  color: #4169e1;
+}
