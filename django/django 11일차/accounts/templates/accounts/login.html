@@ -1,10 +1,14 @@
 {% load django_bootstrap5 %}
-
+{% bootstrap_css %}
+{% block css %}{% endblock %}
 {% block body %}
   <h1>로그인</h1>
+
   <form action="" method="POST">
     {% csrf_token %}
     {% bootstrap_form form %}
-    {% bootstrap_button button_type = "submit" content = "OK" %}
+    {% comment %} {{ review_form.as_p }} {% endcomment %}
+    {% bootstrap_button button_type="submit" content="OK" %}
   </form>
-{% endblock body %}
+{% endblock %}
+{% bootstrap_javascript %}

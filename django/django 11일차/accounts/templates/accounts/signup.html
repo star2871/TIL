@@ -5,7 +5,7 @@
 {% block body %}
   <h1>회원가입</h1>
 
-  <form action="" method='post'>
+  <form action="" method='POST'>
     {% csrf_token %}
     {% bootstrap_form form %}
     {% comment %} {{ review_form.as_p }} {% endcomment %}

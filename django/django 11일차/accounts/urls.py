@@ -9,4 +9,5 @@ urlpatterns = [
     path("<int:pk>/", views.detail, name="detail"),
     path("list", views.list, name="list"),
     path("login/", views.login, name="login"),
+    path("logout/", views.logout, name="logout"),
 ]
