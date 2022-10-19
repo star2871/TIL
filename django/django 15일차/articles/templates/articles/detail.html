@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% bootstrap_css %}
+{% block css %}{% endblock %}
+{% block body %}
+  <h1>{{ article.title }}</h1>
+  <p>{{ article.pk }}번 게시글</p>
+  <h3>
+    <a href="{% url 'accounts:detail' article.user.pk %}">{{ article.user.username }}</a>
+  </h3>
+  <p>{{ article.content }}
+  </p>
+{% endblock body %}
+{% bootstrap_javascript %}
