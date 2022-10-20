@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% bootstrap_css %}
+{% block css %}{% endblock %}
+{% block body %}
+  <h1>게시판</h1>
+  <a href="{% url 'articles:create' %}">글 쓰기</a>
+  {% for article in articles %}
+    <h3>
+      <a href="{% url 'articles:detail' article.pk %}">
+        {{ article.title }}
+        |
+        {{ article.content }}
+        |
+        <p class="text-muted">{{ article.user.username }}</p>
+      </a>
+    </h3>
+    <hr>
+  {% endfor %}
+{% endblock body %}
+{% bootstrap_javascript %}
