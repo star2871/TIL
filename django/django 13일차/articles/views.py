@@ -4,6 +4,8 @@ from articles.models import Article
 
 from .forms import ArticleForm
 
+from django.contrib import messages
+
 # Create your views here.
 def index(request):
     articles = Article.objects.order_by("-pk")
@@ -27,6 +29,7 @@ def create(request):
         article_form = ArticleForm(request.POST, request.FILES)
         if article_form.is_valid():
             article_form.save()
+            messages.success(request, "글 작성이 완료되었습니다.")
             return redirect("articles:index")
     else:
         article_form = ArticleForm()
