@@ -21,7 +21,7 @@ urlpatterns = [
 pip install pillow
 ```
 
-> ## Pillow는 여러 이미지 파일 포맷을 지원하고, 이미지 내부 데이타를 엑세스할 수 있게 하며 다양한 이미지 처리 기능을 제공한다. 또한, 이미지 크기를 변형하거나 회전 및 Transform, 그리고 필터링 등 다양한 이미지 프로세싱 작업들을 할 수 있다
+> ### Pillow는 여러 이미지 파일 포맷을 지원하고, 이미지 내부 데이타를 엑세스할 수 있게 하며 다양한 이미지 처리 기능을 제공한다. 또한, 이미지 크기를 변형하거나 회전 및 Transform, 그리고 필터링 등 다양한 이미지 프로세싱 작업들을 할 수 있다
 
 # Model 만들기
 ## 게시글이 여러 이미지를 가지고 있는 1:N 구조의 모델을 생성했다.
@@ -89,11 +89,11 @@ class PostSerializer(serializers.ModelSerializer):
         return instance
 ```
 
-> ## Serializers.py 에는 이미지를 직렬화할 PostImageSerializer을 두고, Post에서 글과 이미지를 한번에 입력받아서 저장할 것이기 때문에 PostImageSerializer를 images 변수를 두어 가져온다.
+> ### Serializers.py 에는 이미지를 직렬화할 PostImageSerializer을 두고, Post에서 글과 이미지를 한번에 입력받아서 저장할 것이기 때문에 PostImageSerializer를 images 변수를 두어 가져온다.
 
-> ## get_images 함수는 게시글에 등록된 이미지들을 가지고 오기 위해 생성해주었다. PostImage 모델에서 related_name='image'이라고 선언해주었기 때문에 post 인스턴스(obj)에서 바로 image을 사용해서 역참조를 할수 있다. PostImage 객체에 이미지 데이터를 담아서 반환해준다.
+> ### get_images 함수는 게시글에 등록된 이미지들을 가지고 오기 위해 생성해주었다. PostImage 모델에서 related_name='image'이라고 선언해주었기 때문에 post 인스턴스(obj)에서 바로 image을 사용해서 역참조를 할수 있다. PostImage 객체에 이미지 데이터를 담아서 반환해준다.
 
-> ## create 메소드에서는 파일 형식으로 전달받은 데이터틀 images_data에 따로담아놓고 post 객체를 생성한다. images_data 변수 안에 담겨 있는 image 리스트들을 .getlist(‘image’) 를 통해서 접근하여 for문으로 image_data를 하나씩 꺼내온다. 그 후 좀 전에 생성한 post 객체와, image_data를 PostImage 객체에 담아 생성한다.
+> ### create 메소드에서는 파일 형식으로 전달받은 데이터틀 images_data에 따로담아놓고 post 객체를 생성한다. images_data 변수 안에 담겨 있는 image 리스트들을 .getlist(‘image’) 를 통해서 접근하여 for문으로 image_data를 하나씩 꺼내온다. 그 후 좀 전에 생성한 post 객체와, image_data를 PostImage 객체에 담아 생성한다.
 
 # View 작성하기
 ### 마지막으로 viewset을 사용해서 view를 작성해주고 url에도 라우터를 이용해서 추가해준다.
