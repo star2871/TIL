@@ -10,7 +10,7 @@
 > ### api.openweathermap.org/data/2.5/weather?q={도시이름}&appid={API key}
 
 # 3. 데이터 호출해보기
-![img](/images_otyvs1109_post_85bd5efc-e74e-4062-a89e-66a5de99def8_Untitled.png)
+![(/images_otyvs1109_post_85bd5efc-e74e-4062-a89e-66a5de99def8_Untitled.png)](https://github.com/star2871/TIL/blob/master/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%95%98%EB%A9%B4%EC%84%9C%20%EC%83%88%EB%A1%9C%20%EC%95%8C%EA%B2%8C%EB%90%9C%20%EB%82%B4%EC%9A%A9/images_otyvs1109_post_85bd5efc-e74e-4062-a89e-66a5de99def8_Untitled.png)
 
 # 4. 코드 작성
   - ## index.html
@@ -75,7 +75,7 @@
   });
   ```
   - ## 결과창
-  ![img](/images_otyvs1109_post_25553726-c7ba-47b4-af92-5c6382de2d9c_Untitled%201.png)
+  ![/images_otyvs1109_post_25553726-c7ba-47b4-af92-5c6382de2d9c_Untitled%201.png](https://github.com/star2871/TIL/blob/master/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%95%98%EB%A9%B4%EC%84%9C%20%EC%83%88%EB%A1%9C%20%EC%95%8C%EA%B2%8C%EB%90%9C%20%EB%82%B4%EC%9A%A9/images_otyvs1109_post_25553726-c7ba-47b4-af92-5c6382de2d9c_Untitled%201.png))
 
 # 5. 페이지 향상
 ```
