@@ -115,3 +115,207 @@ currentTime.append(`${month}월 ${day}일 ${hours}:${minutes}`);
 
 }
 ```
+# 날씨 예보 api
+```
+<title>날씨</title>
+
+<script type = "text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<script src = "http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+ 
+
+</head>
+
+<body>
+
+    <h2>기상 요건 준비</h2>
+
+    <hr>
+
+    <script type="text/javascript">
+
+$(document).ready(function(){//바로 읽어 들임
+
+    
+
+    $.ajax({
+
+        
+
+        url:"http://api.openweathermap.org/data/2.5/forecast?lat=35.17944&lon=129.07556&appid=680fa4640e3a07aa6def97577ad7e05c",//lat, lon 지리적 좌표
+
+        
+
+        dataType:"json",//밑의 데이터를 사용하는 글자
+
+        success:function(city){//성공했을때 호출되는 함수
+
+            console.log(city); 
+
+            city.name;
+
+            $.each(city.list, function(key) {//위의 url을 기준으로 도시를 읽어 들이고..
+
+ 
+
+                // 오늘 날짜 구하는 코딩
+
+                var now = new Date();//오늘 날짜 데이트 함수로 호출
+
+                var year= now.getFullYear();
+
+                var mon = (now.getMonth()+1)>9 ? ''+(now.getMonth()+1) : '0'+(now.getMonth()+1);
+
+                var day = now.getDate()>9 ? ''+now.getDate() : '0'+now.getDate();
+
+                var today = year + '-' + mon + '-' + day;
+
+                var week = new Array('일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일');    // 요일
+
+                // api에서 받는 날짜   
+
+                var date = city.list[key].dt_txt.substring(0,10)
+
+                var time = city.list[key].dt_txt.substring(11,13)
+
+                var yoil = new Date(date).getDay();    // 받아 오는 날짜의 요일 일-0 월-1 화-2....
+
+                var todayLabel = week[yoil];
+
+                // 최고온도 절대 온도로 받아 옴으로
+
+                var max=(Math.round(city.list[key].main.temp_max) - 273)+"˚C";
+
+                // 날씨
+
+                var weath = city.list[key].weather[0].description;
+
+                
+
+                if(date === today) {
+
+ 
+
+                    if(time==='12'){
+
+                    if (weath === 'sky is clear') {//맑음
+
+                        $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                    } else if(weath === 'few clouds'){
+
+                        $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                    } else if(weath === 'scattered clouds'){
+
+                        $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                    } else if(weath === 'broken clouds'){
+
+                        $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                    } else if(weath === 'overcast clouds'){
+
+                        $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                    } else if(weath === 'shower rain'){
+
+                        $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                    } else if(weath === 'light rain'){
+
+                        $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                    } else if(weath === 'moderate rain'){
+
+                        $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                    } else if(weath === 'Rain'){
+
+                        $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                    } else if(weath === 'Thunderstorm'){
+
+                        $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                    } else if(weath === 'snow'){
+
+                        $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                    } else if(weath === 'mist'){
+
+                        $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                    }
+
+                    }
+
+                } else {
+
+ 
+
+                    if(time==='12'){
+
+                        if (weath === 'sky is clear') {
+
+                            $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                        } else if(weath === 'few clouds'){
+
+                            $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                        } else if(weath === 'scattered clouds'){
+
+                            $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                        } else if(weath === 'broken clouds'){
+
+                            $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                        } else if(weath === 'overcast clouds'){
+
+                            $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                        } else if(weath === 'shower rain'){
+
+                            $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                        } else if(weath === 'light rain'){
+
+                            $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                        } else if(weath === 'moderate rain'){
+
+                            $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                        } else if(weath === 'Rain'){
+
+                            $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                        } else if(weath === 'Thunderstorm'){
+
+                            $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                        } else if(weath === 'snow'){
+
+                            $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                        } else if(weath === 'mist'){
+
+                            $("#weather").append(date + "의 날씨는 " + weath + " 최고 온도는 " + max+"<br/>");
+
+                        }
+
+                    }   
+
+                }
+
+            });
+
+        }
+
+    });
+
+});
+```
