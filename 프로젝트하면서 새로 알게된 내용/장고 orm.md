@@ -59,3 +59,48 @@
 > ### Person.objects.distinct()
 - ### 모든 객체가 검색되었습니다.
 - ###  모델의 모든 필드를 DISTINCT의 조건으로 했을 경우, 중복되는 레코드는 없다는 것입니다.
+
+# 5. 하나의 모델에서 독립적인 여러 조건으로 Aggregation 하고 싶을 때
+## 상품의 리뷰데이터 모델을 가정합니다. 리뷰는 review_type이라는 컬럼으로 타입을 구분하고 있습니다.
+```
+# Model
+from django.db import models
+class ItemReview(Model):
+    pk = BigAutoField()
+    item_no = ForeignKey(Item)
+    point = IntegerField()
+    review_type = IntegerField() # 0: text, 1: photo
+```
+## 한번의 쿼리로 모든 리뷰의 개수와, review_type=1인 리뷰의 개수는 어떻게 구할 수 있을 까요?
+
+```
+# QuerySet
+from django.db.models import (Sum, Count, Case, When, Avg,
+                              IntegerField, Value)
+ItemReview.objects.filter(
+    deleted=False
+).annotate(
+    product_review_type=Case(
+        When(
+            review_type=1,
+            then=1
+        ), default=0, output_field=IntegerField()
+    )
+).aggregate(
+    product_review_count=Coalesce(
+        Sum('product_review_type'), Value(0)
+    ),
+    all_review_count=Coalesce(
+        Count('item_review_no')
+    ),
+    average_point=Coalesce(
+        Avg('point'), Value(0)
+    ),
+)
+```
+
+## `annotate()`는 주석이라는 뜻으로, 기존 컬럼값을 manipulate하여 새로운 컬럼의 값으로 생성하는 역할을 합니다. annotate를 활용하여 review_type이 특정값인 리뷰를 1, 아닌 경우 0인 값이 되는 `product_review_type`컬럼을 하나 추가합니다.
+
+## `aggregate`함수는, 모든 컬럼을 합쳐주는 기능을 합니다. `annotate()`에서 생성한 `product_review_type`컬럼의 값을 모두 더하면 특정 review_type인 총 리뷰의 개수를 구할 수 있습니다.
+
+## `all_review_count`는 모든 리뷰의 수, `average_point`는 모든 리뷰의 평점을 계산하는 예시입니다.
